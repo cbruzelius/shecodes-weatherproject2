@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Finder</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="src/styles.css" >
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://kit.fontawesome.com/553d3da925.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div class="container">
+  
+  <div class="forecast">
+    <h2 class="search-city" id="city"></h2>
+    <h3 id="current-local-date-time">
+      Saturday 11:00pm
+    </h3>
+    <div class="container">
+      <div class="row">
+        <div class="col-6 align-self-start">
+            <i class="fas fa-sun">
+            </i>
+          <h1 >
+            <span 
+            class="city-temp" 
+            id= "temperature">
+            9
+          </span>
+           • C
+          </h1>
+        </div>
+        <div class="col-6 align-self-center">   
+          <ul>
+            <li id= "selector-city-high">
+              70• HIGH
+            </li>
+            <span id="selector-city-low">
+              <li >
+              45• LOW
+            </li>
+            </span>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="container-forecast">
+      <div class="row justify-content-center">
+        <div class="col">
+          <ul>
+              <li class="day cur1">
+                Sunday
+              </li> 
+              <li class="high cur1-high">
+                62•
+              </li>
+              <li class=" low cur1-low">
+                43•
+              </li>
+          </ul>
+        </div>
+       
+        <div class="col">
+          <ul>
+              <li class="day cur2">
+                Monday
+              </li>
+            <li class="high cur2-high">
+              60•
+            </li>
+            <li class="low cur2-low">
+              46•
+            </li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <ul>
+              <li class="day cur3">
+                Tuesday
+              </li>
+            <li class="high cur3-high">
+              63•
+            </li>
+            <li class="low cur3-low">
+              43•
+            </li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <ul>
+              <li class="day cur4">
+                Wednesday
+              </li>          
+            <li class="high cur4-high">
+              67•
+            </li>
+            <li class="low cur4-low">
+              48•
+            </li>
+          </ul>
+        </div>
+
+        <div class="col">
+            <ul>
+                <li class="day cur5">
+                  Thursday
+                </li>
+              <li class="high cur5-high">
+                70•
+              </li>
+              <li class="low cur5-low">
+                46•
+              </li>
+            </ul>
+        </div>
+      </div>
+    </div> 
+    <br />
+
+  <div class="w-50 p-3">
+    <form id="city-search">
+    <input 
+      type="text" 
+      placeholder="Search for a new city" 
+      aria-label="Search New City" 
+      autofocus= "on"
+      autocomplete= "off"
+      id="city-input">
+    <input 
+      type="submit" 
+      value= "search">
+    </form>
+  </div>
+  <button id="current-city" type= "button">
+    Current Local Weather
+  </button>
+</div>
+<script src= "src/script.js"></script>
+</div>
+</body>
+</html>
